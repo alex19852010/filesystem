@@ -1,17 +1,11 @@
 #include<iostream>
-#include <cassert>
-#include <map>
 #include <vector>
 #include <fstream>
 #include <functional>
 #include <memory>
-#include <unordered_set>
-#include <cstdlib>
 #include <filesystem>
 
 using namespace std;
-
-// namespace fs = filesystem;
 
 auto recursiveGetFileNamesByExtension = [](const filesystem::path& path, const string& extension) {
     vector<string> fileNames;
